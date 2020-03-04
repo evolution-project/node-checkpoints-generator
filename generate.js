@@ -4,7 +4,7 @@ const rpcDaemon = require('@arqma/arqma-rpc').RPCDaemon
 const fs = require('fs')
 
 // Choose the steps
-const step = 2500
+const step = 100
 
 // Output format for https://github.com/arqma/arqma/blob/master/src/checkpoints/checkpoints.cpp#L173
 // ADD_CHECKPOINT(0, "60077b4d5cd49a1278d448c58b6854993d127fcaedbdeab82acff7f7fd86e328");
@@ -12,7 +12,7 @@ const step = 2500
 async function getData () {
   try {
     const daemonClient = rpcDaemon.createDaemonClient({
-      url: 'http://127.0.0.1:19994'
+      url: 'http://127.0.0.1:52922'
     })
     // When using a self signed certificate with HTTPS you need to set the function sslRejectUnauthorized to false.
     daemonClient.sslRejectUnauthorized(false)
