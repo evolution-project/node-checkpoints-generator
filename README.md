@@ -1,3 +1,5 @@
+Big Thanks to ArQmA team for support.
+
 # Node checkpoints generator
 Generate checkpoints for https://github.com/arqma/arqma/blob/master/src/checkpoints/checkpoints.cpp using arqma-rpc-js.
 
